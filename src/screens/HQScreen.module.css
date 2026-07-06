@@ -1,0 +1,261 @@
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-size: 1.75rem;
+  color: var(--white);
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: 0.85rem;
+  color: var(--gray-d1);
+}
+
+.difficultyToggle {
+  display: inline-flex;
+  padding: 0.2rem;
+  margin-top: 0.9rem;
+  border: 1px solid var(--navy-l2);
+  border-radius: 8px;
+  background: var(--navy-d1);
+  gap: 0.2rem;
+}
+
+.difficultyBtn {
+  padding: 0.42rem 0.8rem;
+  border-radius: 6px;
+  background: transparent;
+  color: var(--gray-d1);
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}
+
+.difficultyBtn:hover {
+  background: var(--navy-l2);
+}
+
+.difficultyActive,
+.difficultyActive:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  flex-shrink: 0;
+}
+
+.statBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.75rem 1.25rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l2);
+  border-radius: 8px;
+  min-width: 80px;
+}
+
+.statNum {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--yellow);
+}
+
+.statLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--gray-d1);
+}
+
+.progressBar {
+  position: relative;
+  height: 8px;
+  background: var(--navy-l1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.progressFill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--blue-l1));
+  border-radius: 4px;
+  transition: width 0.5s ease;
+}
+
+.progressText {
+  position: absolute;
+  right: 0;
+  top: 12px;
+  font-size: 0.75rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--gray-d1);
+}
+
+.moduleGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.moduleCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l2);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  gap: 0.5rem;
+}
+
+.moduleCard:hover {
+  border-color: var(--blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 120, 255, 0.15);
+  text-decoration: none;
+}
+
+.solved {
+  border-color: rgba(27, 177, 82, 0.4);
+  background: linear-gradient(135deg, var(--navy-d1), rgba(27, 177, 82, 0.05));
+}
+
+.solved:hover {
+  border-color: var(--green);
+}
+
+.cardHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.moduleNum {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--blue);
+}
+
+.statusBadge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+}
+
+.statusSolved {
+  background: rgba(27, 177, 82, 0.15);
+  color: var(--green);
+  border: 1px solid rgba(27, 177, 82, 0.3);
+}
+
+.statusLocked {
+  background: rgba(210, 40, 57, 0.1);
+  color: var(--red);
+  border: 1px solid rgba(210, 40, 57, 0.2);
+}
+
+.cardTitle {
+  font-size: 1rem;
+  color: var(--white);
+  font-weight: 600;
+}
+
+.cardTopic {
+  font-size: 0.8rem;
+  color: var(--gray-d1);
+}
+
+.flagDisplay {
+  margin-top: auto;
+  padding: 0.5rem 0.75rem;
+  background: var(--navy-d2);
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.flagCode {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--yellow);
+  letter-spacing: 0.03em;
+}
+
+.flagRedacted {
+  color: var(--navy-l1);
+  user-select: none;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+}
+
+.timeEst {
+  font-size: 0.75rem;
+  color: var(--gray-d2);
+}
+
+.openLink {
+  font-size: 0.8rem;
+  color: var(--blue-l1);
+  font-weight: 600;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.resetBtn {
+  background: transparent;
+  color: var(--gray-d1);
+  border: 1px solid var(--navy-l2);
+  font-size: 0.8rem;
+}
+
+.resetBtn:disabled {
+  cursor: wait;
+  opacity: 0.65;
+}
+
+.resetBtn:hover {
+  color: var(--red);
+  border-color: var(--red-d1);
+  background: transparent;
+}
+
+.resetError {
+  color: var(--red);
+  font-size: 0.78rem;
+  max-width: 34rem;
+}

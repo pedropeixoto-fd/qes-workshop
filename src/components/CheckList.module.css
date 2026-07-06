@@ -1,0 +1,74 @@
+.container {
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--navy);
+  border-bottom: 1px solid var(--navy-l2);
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-d1);
+}
+
+.counter {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  color: var(--gray-d1);
+}
+
+.allPass {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.partial {
+  color: var(--yellow);
+  font-weight: 700;
+}
+
+.list {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+  transition: background 0.1s;
+}
+
+.item:not(:last-child) {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.icon {
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.pass .icon { color: var(--green); }
+.fail .icon { color: var(--red); }
+.pass .label { color: var(--gray-l2); }
+.fail .label { color: var(--gray-d1); }
+
+.label {
+  line-height: 1.4;
+}

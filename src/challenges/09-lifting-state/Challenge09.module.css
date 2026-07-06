@@ -1,0 +1,80 @@
+.tracker {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.input {
+  flex: 1;
+  padding: 0.6rem 0.875rem;
+  background: #0d1a2e;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  color: #e8f4f8;
+  font-size: 0.9rem;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus {
+  border-color: #1493ff;
+}
+
+.input::placeholder {
+  color: #4a7095;
+}
+
+.submitBtn {
+  padding: 0.6rem 1.25rem;
+  background: #1da462;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+}
+
+.submitBtn:hover {
+  background: #17935a;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list li {
+  padding: 0.6rem 0.875rem;
+  background: #0d1a2e;
+  border: 1px solid #1e3a5f;
+  border-radius: 6px;
+  color: #e8f4f8;
+  font-size: 0.875rem;
+}
+
+.emptyMsg {
+  color: #4a7095 !important;
+  font-style: italic;
+  border-color: #132030 !important;
+}
+
+.sandbox {
+  background: #081525;
+  border: 1px solid #1e3a5f;
+  border-radius: 8px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+}

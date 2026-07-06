@@ -1,0 +1,107 @@
+.panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l2);
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+}
+
+.card {
+  padding: 0.85rem;
+  border: 1px solid var(--navy-l1);
+  border-radius: 6px;
+  background: var(--navy-d2);
+}
+
+.label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--gray-d1);
+  margin-bottom: 0.25rem;
+}
+
+.value {
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--yellow-l1);
+  font-size: 0.9rem;
+  overflow-wrap: anywhere;
+}
+
+.row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1fr) 160px auto;
+  gap: 0.75rem;
+  align-items: end;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  color: var(--gray-d1);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.form select {
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l1);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  align-items: center;
+  padding: 0.65rem 0.75rem;
+  background: var(--navy-d2);
+  border: 1px solid var(--navy-l2);
+  border-radius: 6px;
+}
+
+.muted {
+  color: var(--gray-d1);
+  font-size: 0.85rem;
+}
+
+.success {
+  color: var(--green-l1);
+}
+
+.danger {
+  color: var(--red);
+}
+
+@media (max-width: 700px) {
+  .form {
+    grid-template-columns: 1fr;
+  }
+}

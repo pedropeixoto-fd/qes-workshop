@@ -1,0 +1,69 @@
+.container {
+  margin-top: 1rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background: var(--navy);
+  border-bottom: 1px solid var(--navy-l2);
+}
+
+.title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-d1);
+}
+
+.revealBtn {
+  background: transparent;
+  color: var(--blue-l1);
+  border: 1px solid var(--blue-d2);
+  font-size: 0.75rem;
+  padding: 0.25rem 0.6rem;
+}
+
+.revealBtn:hover {
+  background: var(--navy-l2);
+}
+
+.placeholder {
+  padding: 0.75rem 1rem;
+  font-size: 0.8rem;
+  color: var(--gray-d2);
+  font-style: italic;
+}
+
+.list {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+.hint {
+  padding: 0.6rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+.hint:last-child {
+  border-bottom: none;
+}
+
+.hintLabel {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange);
+  font-weight: 700;
+}

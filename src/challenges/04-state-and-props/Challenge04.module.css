@@ -1,0 +1,27 @@
+.counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+}
+
+.countDisplay {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--yellow);
+  margin: 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.sandbox {
+  margin: 1.5rem 0;
+}

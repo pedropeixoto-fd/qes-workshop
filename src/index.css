@@ -1,0 +1,181 @@
+/* ─── FanDuel Brand Tokens ─────────────────────────────────── */
+:root {
+  /* Primary */
+  --blue:        #0078ff;
+  --navy:        #001c55;
+  --white:       #ffffff;
+  --yellow:      #ffdc2e;
+
+  /* Blue scale */
+  --blue-l1:     #3393ff;
+  --blue-l2:     #1a86ff;
+  --blue-d1:     #006ce6;
+  --blue-d2:     #0060cc;
+
+  /* Navy scale */
+  --navy-l1:     #334977;
+  --navy-l2:     #1a3366;
+  --navy-d1:     #00194d;
+  --navy-d2:     #00143b;
+
+  /* Yellow scale */
+  --yellow-l1:   #ffe76d;
+  --yellow-l2:   #ffe043;
+  --yellow-d1:   #e6c629;
+  --yellow-d2:   #ccb025;
+
+  /* Gray scale */
+  --gray-l1:     #e3e7ea;
+  --gray-l2:     #d5dce0;
+  --gray-l3:     #ced6db;
+  --gray:        #b9c4cb;
+  --gray-d1:     #949da2;
+  --gray-d2:     #6f767a;
+  --gray-d3:     #252729;
+
+  /* Semantic */
+  --green:       #1bb152;
+  --green-l1:    #5fc886;
+  --red:         #d22839;
+  --red-d1:      #bd2433;
+  --orange:      #f87a1e;
+}
+
+/* ─── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: var(--navy-d2);
+  color: var(--gray-l1);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ─── Typography ───────────────────────────────────────────── */
+h1, h2, h3 {
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+code, pre {
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+}
+
+a {
+  color: var(--blue-l1);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--blue-l2);
+  text-decoration: underline;
+}
+
+/* ─── Global utility classes ───────────────────────────────── */
+.challenge-instructions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.challenge-instructions p {
+  color: var(--gray-l2);
+  line-height: 1.7;
+}
+
+.challenge-instructions code {
+  background: var(--navy-l2);
+  color: var(--yellow-l1);
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+.code-preview {
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l1);
+  border-radius: 6px;
+  overflow: auto;
+}
+
+.code-preview pre {
+  padding: 1rem 1.25rem;
+  font-size: 0.85rem;
+  color: var(--gray-l1);
+  line-height: 1.7;
+  white-space: pre-wrap;
+}
+
+/* ─── Shared button styles ─────────────────────────────────── */
+button {
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1.25rem;
+  transition: background 0.15s, transform 0.1s;
+  background: var(--blue);
+  color: var(--white);
+}
+
+button:hover:not(:disabled) {
+  background: var(--blue-l2);
+}
+
+button:active:not(:disabled) {
+  transform: scale(0.97);
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.verify-btn {
+  background: var(--yellow);
+  color: var(--navy-d2);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+}
+
+.verify-btn:hover:not(:disabled) {
+  background: var(--yellow-l1);
+}
+
+/* ─── Inputs ───────────────────────────────────────────────── */
+input[type="text"], input:not([type]) {
+  background: var(--navy-d1);
+  border: 1px solid var(--navy-l1);
+  color: var(--white);
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-family: inherit;
+  font-size: 0.9rem;
+  outline: none;
+  width: 100%;
+}
+
+input:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 2px rgba(0, 120, 255, 0.25);
+}
+
+/* ─── Scrollbar ────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--navy-d2); }
+::-webkit-scrollbar-thumb { background: var(--navy-l1); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--blue-d2); }

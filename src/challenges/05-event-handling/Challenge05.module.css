@@ -1,0 +1,32 @@
+.interceptor {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--blue);
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.field label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--blue-l1);
+}
+
+.readout {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--yellow);
+  padding: 0.4rem 0.75rem;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}

@@ -1,0 +1,53 @@
+.badgeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+@media (max-width: 700px) {
+  .badgeGrid { grid-template-columns: 1fr; }
+}
+
+.agentCase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.caseLabel {
+  font-size: 0.75rem;
+  color: var(--gray-d1);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.badge {
+  padding: 1rem;
+  background: var(--navy-d1);
+  border: 1px solid var(--blue-d2);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.inactive {
+  color: var(--red);
+  font-weight: 600;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.classified {
+  color: var(--yellow);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.level {
+  color: var(--gray-l2);
+  font-size: 0.85rem;
+  margin: 0;
+}

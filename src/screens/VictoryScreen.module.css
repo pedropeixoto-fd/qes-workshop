@@ -1,0 +1,114 @@
+.page {
+  min-height: calc(100vh - 56px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1.5rem;
+  background: radial-gradient(ellipse at center, rgba(27,177,82,0.1) 0%, var(--navy-d2) 60%);
+}
+
+.card {
+  max-width: 560px;
+  width: 100%;
+  padding: 2.5rem;
+  background: var(--navy-d1);
+  border: 2px solid var(--green);
+  border-radius: 12px;
+  box-shadow: 0 0 60px rgba(27, 177, 82, 0.15);
+  text-align: center;
+}
+
+.classification {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  color: var(--green);
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2.25rem;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: var(--gray-d1);
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.time {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background: var(--navy-d2);
+  border: 1px solid var(--navy-l1);
+  border-radius: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.9rem;
+  color: var(--yellow);
+  margin-bottom: 1.5rem;
+}
+
+.flagList {
+  text-align: left;
+  background: var(--navy-d2);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.flagsTitle {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--gray-d1);
+  margin-bottom: 0.75rem;
+  font-weight: 700;
+}
+
+.flagItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 0;
+}
+
+.check {
+  color: var(--green);
+  font-weight: 700;
+}
+
+.flagCode {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85rem;
+  color: var(--yellow);
+}
+
+.actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.copyBtn {
+  background: var(--green);
+  color: var(--navy-d2);
+  font-weight: 700;
+  padding: 0.7rem 1.5rem;
+}
+
+.copyBtn:hover {
+  background: var(--green-l1);
+}
+
+.hqBtn {
+  background: transparent;
+  color: var(--gray-l1);
+  border: 1px solid var(--navy-l2);
+}
+
+.hqBtn:hover {
+  background: var(--navy-l2);
+}
