@@ -17,6 +17,12 @@ export function Challenge03Intermediate() {
       <div className="challenge-instructions">
         <p>Open <code>src/challenges/03-typescript-basics-intermediate/exercise.tsx</code>.</p>
         <p>Create a discriminated union for bet states and update <code>formatBetState</code> to handle every status.</p>
+        <p>Expected return values:</p>
+        <ul>
+          <li>PENDING #101 Lakers ML - stake $25</li>
+          <li>SETTLED #102 Arsenal -1 - paid $28</li>
+          <li>VOIDED #103 Yankees O8.5 - rain delay</li>
+        </ul>
       </div>
       <div className={styles.panel}>
         {[pending, settled, voided].map(bet => (

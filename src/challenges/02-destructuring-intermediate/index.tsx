@@ -18,7 +18,6 @@ const checks: ChallengeCheck[] = [
   { label: 'riskBand is watch from nested destructuring', pass: riskBand === 'watch' },
   { label: 'firstMarket is NBA and remainingMarkets has NFL/UCL', pass: firstMarket === 'NBA' && remainingMarkets.join(',') === 'NFL,UCL' },
   { label: 'profileTier is renamed from user.tier', pass: profileTier === 4 },
-  { label: 'dailyLimit defaults to 1000', pass: dailyLimit === 1000 },
 ];
 
 export function Challenge02Intermediate() {
@@ -32,7 +31,6 @@ export function Challenge02Intermediate() {
         <div className={styles.card}><p className={styles.label}>Handle</p><p className={styles.value}>{handle}</p></div>
         <div className={styles.card}><p className={styles.label}>Risk</p><p className={styles.value}>{riskScore} / {riskBand}</p></div>
         <div className={styles.card}><p className={styles.label}>Markets</p><p className={styles.value}>{firstMarket} + {remainingMarkets.length}</p></div>
-        <div className={styles.card}><p className={styles.label}>Daily Limit</p><p className={styles.value}>{dailyLimit}</p></div>
       </div>
     </ChallengeShell>
   );

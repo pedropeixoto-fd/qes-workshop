@@ -10,7 +10,6 @@ function VerifyChallenge05({ onResult }: { onResult: (checks: ChallengeCheck[]) 
     const clickCountEl = document.querySelector('[data-testid="click-count"]');
     const inputEl = document.querySelector('[data-testid="monitor-input"]') as HTMLInputElement | null;
     const inputValueEl = document.querySelector('[data-testid="input-value"]');
-    const escapeEl = document.querySelector('[data-testid="escape-status"]');
 
     btn?.click();
     btn?.click();
@@ -27,12 +26,6 @@ function VerifyChallenge05({ onResult }: { onResult: (checks: ChallengeCheck[]) 
 
     const inputValue = inputValueEl?.textContent ?? '';
 
-    if (inputEl) {
-      inputEl.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape', bubbles: true }));
-    }
-
-    const escapeText = escapeEl?.textContent ?? '';
-
     const checks: ChallengeCheck[] = [
       {
         label: 'Button click increases count (clicked 3×, expects 3)',
@@ -41,10 +34,6 @@ function VerifyChallenge05({ onResult }: { onResult: (checks: ChallengeCheck[]) 
       {
         label: 'Input change updates displayed selection',
         pass: inputValue.includes('PARLAY'),
-      },
-      {
-        label: 'Escape key clears the selection',
-        pass: escapeText.includes('Selection cleared'),
       },
     ];
 
@@ -62,7 +51,6 @@ export function Challenge05() {
   const [checks, setChecks] = useState<ChallengeCheck[]>([
     { label: 'Button click increases count (clicked 3×, expects 3)', pass: false },
     { label: 'Input change updates displayed selection', pass: false },
-    { label: 'Escape key clears the selection', pass: false },
   ]);
 
   return (

@@ -10,7 +10,7 @@ const total = totalOdds(tradable);
 
 const checks: ChallengeCheck[] = [
   { label: 'boostMarkets returns a new array', pass: boosted !== markets },
-  { label: 'NBA Finals odds are boosted to 1.76', pass: boosted[0]?.odds === 1.76 },
+  { label: 'NBA Finals odds are boosted to 1.76', pass: boosted[0]?.odds.toFixed(2) === "1.76" },
   { label: 'Tradable markets filter out odds below 2.0', pass: tradable.length === 2 },
   { label: 'Filtered markets keep Champions League and Super Bowl', pass: tradable.map(m => m.id).join(',') === 'ucl-final,super-bowl' },
   { label: 'totalOdds returns 5.83 for the tradable boosted markets', pass: Math.abs(total - 5.83) < 0.001 },

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { flushSync } from 'react-dom';
 import { ChallengeShell } from '../../components/ChallengeShell';
 import { meta } from './meta';
 import type { ChallengeCheck } from '../../types';
@@ -19,13 +20,18 @@ function VerifyChallenge04({ onResult }: { onResult: (checks: ChallengeCheck[]) 
 
     const initialCount = parseInt(countEl?.textContent ?? 'NaN', 10);
 
-    // Click increment twice
-    incBtn?.click();
-    incBtn?.click();
+    // flushSync ensures React commits DOM updates before we read countEl
+    flushSync(() => {
+      incBtn?.click();
+    });
+    flushSync(() => {
+      incBtn?.click();
+    });
     const afterInc = parseInt(countEl?.textContent ?? 'NaN', 10);
 
-    // Click decrement once
-    decBtn?.click();
+    flushSync(() => {
+      decBtn?.click();
+    });
     const afterDec = parseInt(countEl?.textContent ?? 'NaN', 10);
 
     const checks: ChallengeCheck[] = [

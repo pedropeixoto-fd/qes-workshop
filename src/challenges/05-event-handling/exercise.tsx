@@ -8,16 +8,14 @@ import styles from './Challenge05.module.css';
 export function BetForm() {
   const [clickCount, setClickCount] = useState(0);
   const [inputValue, setInputValue] = useState('');
-  const [escapePressed, setEscapePressed] = useState(false);
 
   // TODO 1: Update clickCount by 1.
-  const handleButtonClick = () => {};
+  const handleButtonClick = () => {
+  };
 
   // TODO 2: Update inputValue from the input event.
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {};
-
-  // TODO 3: Set escapePressed to true when Escape is pressed.
-  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {};
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  };
 
   return (
     <div className={styles.interceptor}>
@@ -40,17 +38,9 @@ export function BetForm() {
           data-testid="monitor-input"
           placeholder="Enter your selection..."
           onChange={handleInputChange}
-          onKeyDown={handleKeyDown}
         />
         <span data-testid="input-value" className={styles.readout}>
           Selection: "{inputValue}"
-        </span>
-      </div>
-
-      <div className={styles.field}>
-        <label>Clear Selection</label>
-        <span data-testid="escape-status" className={styles.readout}>
-          {escapePressed ? '✓ Selection cleared' : '— Waiting to clear...'}
         </span>
       </div>
     </div>

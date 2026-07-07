@@ -13,8 +13,15 @@ export type BetState = {
 };
 
 // TODO 2: Switch on bet.status and format all three states.
+// example return value: 'PENDING #101 Lakers ML - stake $25'
 export function formatBetState(bet: BetState): string {
-  return `${bet.selection}: ${bet.status}`;
+  switch (bet.status) {
+    case 'pending':
+    case 'settled':
+    case 'voided':
+    default:
+      return `Unknown bet status: ${bet.status}`;
+  }
 }
 
 export const pending: BetState = { status: 'pending', id: 101, selection: 'Lakers ML', stake: 25 };
