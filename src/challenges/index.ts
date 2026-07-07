@@ -10,12 +10,8 @@ import { meta as meta09 } from './09-lifting-state/meta';
 import { meta as meta01Intermediate } from './01-arrow-functions-intermediate/meta';
 import { meta as meta02Intermediate } from './02-destructuring-intermediate/meta';
 import { meta as meta03Intermediate } from './03-typescript-basics-intermediate/meta';
-import { meta as meta04Intermediate } from './04-state-and-props-intermediate/meta';
-import { meta as meta05Intermediate } from './05-event-handling-intermediate/meta';
-import { meta as meta06Intermediate } from './06-conditional-rendering-intermediate/meta';
 import { meta as meta07Intermediate } from './07-rerenders-intermediate/meta';
 import { meta as meta08Intermediate } from './08-mutation-and-copy-intermediate/meta';
-import { meta as meta09Intermediate } from './09-lifting-state-intermediate/meta';
 import type { ChallengeDifficulty } from '../types';
 
 export const CHALLENGE_SETS = {
@@ -24,12 +20,8 @@ export const CHALLENGE_SETS = {
     meta01Intermediate,
     meta02Intermediate,
     meta03Intermediate,
-    meta04Intermediate,
-    meta05Intermediate,
-    meta06Intermediate,
     meta07Intermediate,
     meta08Intermediate,
-    meta09Intermediate,
   ],
 } satisfies Record<ChallengeDifficulty, typeof meta01[]>;
 

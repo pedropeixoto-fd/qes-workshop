@@ -17,12 +17,8 @@ import { Challenge09 } from './challenges/09-lifting-state';
 import { Challenge01Intermediate } from './challenges/01-arrow-functions-intermediate';
 import { Challenge02Intermediate } from './challenges/02-destructuring-intermediate';
 import { Challenge03Intermediate } from './challenges/03-typescript-basics-intermediate';
-import { Challenge04Intermediate } from './challenges/04-state-and-props-intermediate';
-import { Challenge05Intermediate } from './challenges/05-event-handling-intermediate';
-import { Challenge06Intermediate } from './challenges/06-conditional-rendering-intermediate';
 import { Challenge07Intermediate } from './challenges/07-rerenders-intermediate';
 import { Challenge08Intermediate } from './challenges/08-mutation-and-copy-intermediate';
-import { Challenge09Intermediate } from './challenges/09-lifting-state-intermediate';
 
 const challengeRoutes = {
   beginner: {
@@ -40,12 +36,8 @@ const challengeRoutes = {
     '01-arrow-functions': <Challenge01Intermediate />,
     '02-destructuring': <Challenge02Intermediate />,
     '03-typescript-basics': <Challenge03Intermediate />,
-    '04-state-and-props': <Challenge04Intermediate />,
-    '05-event-handling': <Challenge05Intermediate />,
-    '06-conditional-rendering': <Challenge06Intermediate />,
     '07-rerenders': <Challenge07Intermediate />,
     '08-mutation-and-copy': <Challenge08Intermediate />,
-    '09-lifting-state': <Challenge09Intermediate />,
   },
 };
 

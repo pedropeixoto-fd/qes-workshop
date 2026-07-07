@@ -5,7 +5,7 @@ export const meta: ChallengeMeta = {
   baseId: '07-rerenders',
   difficulty: 'intermediate',
   progressKey: 'intermediate:07-rerenders',
-  moduleNumber: 7,
+  moduleNumber: 4,
   title: 'The Stable Odds Board',
   topic: 'React Re-renders',
   narrative:

@@ -5,7 +5,7 @@ export const meta: ChallengeMeta = {
   baseId: '08-mutation-and-copy',
   difficulty: 'intermediate',
   progressKey: 'intermediate:08-mutation-and-copy',
-  moduleNumber: 8,
+  moduleNumber: 5,
   title: 'The Parlay Repair Protocol',
   topic: 'Mutation & Shallow/Deep Copy',
   narrative:
